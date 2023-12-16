@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simakma.controller.ProfilController">
+   <center>
+      <AnchorPane prefHeight="720.0" prefWidth="1172.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="354.0" layoutY="111.0" text="Profil Mahasiswa" textFill="DODGERBLUE">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="210.0" layoutY="306.0" text="Nomor Pokok Mahasiswa" textFill="DODGERBLUE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="209.0" layoutY="237.0" text="Nama" textFill="DODGERBLUE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="212.0" layoutY="436.0" text="Tempat Lahir" textFill="DODGERBLUE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="536.0" layoutY="436.0" text="Alamat" textFill="DODGERBLUE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="534.0" layoutY="237.0" text="Email" textFill="DODGERBLUE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="209.0" layoutY="371.0" text="Program Studi" textFill="DODGERBLUE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="labNama" layoutX="209.0" layoutY="267.0" prefHeight="30.0" prefWidth="240.0" style="-fx-border-color: #1e90ff; -fx-border-width: 2; -fx-text-fill: #1e90ff;" text="Nama User">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="labNPM" layoutX="209.0" layoutY="334.0" prefHeight="30.0" prefWidth="240.0" style="-fx-border-color: #1e90ff; -fx-border-width: 2; -fx-text-fill: #1e90ff;" text="NPM">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="labProdi" layoutX="209.0" layoutY="400.0" prefHeight="30.0" prefWidth="240.0" style="-fx-border-color: #1e90ff; -fx-border-width: 2; -fx-text-fill: #1e90ff;" text="Prodi">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="labTempat" layoutX="209.0" layoutY="464.0" prefHeight="30.0" prefWidth="240.0" style="-fx-border-color: #1e90ff; -fx-border-width: 2; -fx-text-fill: #1e90ff;" text="Tempat Lahir">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="tabAlamat" layoutX="535.0" layoutY="464.0" prefHeight="30.0" prefWidth="240.0" style="-fx-border-color: #1e90ff; -fx-border-width: 2; -fx-text-fill: #1e90ff;" text="Alamat">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="tabEmail" layoutX="535.0" layoutY="266.0" prefHeight="30.0" prefWidth="240.0" style="-fx-border-color: #1e90ff; -fx-border-width: 2; -fx-text-fill: #1e90ff;" text="Email">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="355.0" layoutY="152.0" text="Berikut ini informasi mengenai data diri Anda." textFill="DODGERBLUE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="DODGERBLUE" glyphName="USER" layoutX="300.0" layoutY="164.0" size="55" />
+            <Label layoutX="81.0" layoutY="45.0" text="&gt;&gt;Profil" textFill="#0766ad">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="616.0" layoutX="300.0" layoutY="194.0" startX="-214.66665649414062" stroke="DODGERBLUE" />
+            <Label layoutX="211.0" layoutY="502.0" text="Tanggal Lahir" textFill="DODGERBLUE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="labTanggal" layoutX="209.0" layoutY="530.0" prefHeight="30.0" prefWidth="240.0" style="-fx-border-color: #1e90ff; -fx-border-width: 2; -fx-text-fill: #1e90ff;" text="Tempat &amp; Tanggal Lahir">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="535.0" layoutY="305.0" text="No. Telepon" textFill="DODGERBLUE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="tabTelepon" layoutX="535.0" layoutY="333.0" prefHeight="30.0" prefWidth="240.0" style="-fx-border-color: #1e90ff; -fx-border-width: 2; -fx-text-fill: #1e90ff;" text="No. Telepon">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="537.0" layoutY="371.0" text="Asal Sekolah" textFill="DODGERBLUE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="tabSekolah" layoutX="535.0" layoutY="400.0" prefHeight="30.0" prefWidth="240.0" style="-fx-border-color: #1e90ff; -fx-border-width: 2; -fx-text-fill: #1e90ff;" text="Asal Sekolah">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

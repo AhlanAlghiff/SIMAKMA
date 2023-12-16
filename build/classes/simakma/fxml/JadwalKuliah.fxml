@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simakma.controller.JadwalKuliahController">
+   <center>
+      <AnchorPane prefHeight="720.0" prefWidth="981.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="476.0" layoutY="133.0" text=" " />
+            <Label layoutX="338.0" layoutY="117.0" text="Jadwal Perkuliahan" textFill="DODGERBLUE">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Label>
+            <Line endX="698.0" layoutX="204.0" layoutY="181.0" startX="-127.33333587646484" stroke="DODGERBLUE" />
+            <TableView fx:id="tvData" layoutX="109.0" layoutY="250.0" prefHeight="306.0" prefWidth="759.0">
+               <columns>
+                  <TableColumn fx:id="colNo" minWidth="30.0" prefWidth="44.0" style="-fx-alignment: CENTER; -fx-font-family: arial; -fx-text-fill: #106ff;">
+                     <graphic>
+                        <Label text="No" textFill="DODGERBLUE">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="colHari" minWidth="30.0" prefWidth="84.0" style="-fx-alignment: CENTER; -fx-font-family: arial;">
+                     <graphic>
+                        <Label text="Hari" textFill="DODGERBLUE">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="colMatkul" minWidth="30.0" prefWidth="203.0" style="-fx-alignment: CENTER; -fx-font-family: arial;">
+                     <graphic>
+                        <Label text="Mata Kuliah" textFill="DODGERBLUE">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="colRuangan" minWidth="30.0" prefWidth="222.0" style="-fx-alignment: CENTER; -fx-font-family: arial; -fx-text-fill: #106ff;">
+                     <graphic>
+                        <Label text="Ruangan" textFill="DODGERBLUE">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn prefWidth="205.0" style="-fx-alignment: CENTER; -fx-font-family: arial; -fx-text-fill: #106ff;">
+                     <columns>
+                        <TableColumn fx:id="colJamMulai" prefWidth="105.0" style="-fx-alignment: CENTER;">
+                           <graphic>
+                              <Label text="Jam Mulai" textFill="DODGERBLUE">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="colJamSelsai" prefWidth="100.0" style="-fx-alignment: CENTER;">
+                           <graphic>
+                              <Label prefHeight="20.0" prefWidth="94.0" text="Jam Selesai" textFill="DODGERBLUE">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </TableColumn>
+                     </columns>
+                     <graphic>
+                        <Label text="Waktu" textFill="DODGERBLUE">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </TableColumn>
+               </columns>
+            </TableView>
+            <Label layoutX="111.0" layoutY="208.0" text="Jadwal Perkuliahan yang tersedia." textFill="DODGERBLUE">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="687.0" layoutX="214.0" layoutY="191.0" startX="-136.0" stroke="DODGERBLUE" />
+            <Label layoutX="111.0" layoutY="40.0" text="&gt;&gt; Jadwal Kuliah" textFill="DODGERBLUE">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simakma.controller.MataKuliahController">
+   <center>
+      <AnchorPane prefHeight="720.0" prefWidth="989.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="123.0" layoutY="102.0" text="Mata Kuliah" textFill="DODGERBLUE">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tvData" layoutX="123.0" layoutY="349.0" prefHeight="262.0" prefWidth="732.0">
+               <columns>
+                  <TableColumn fx:id="idMatkul" prefWidth="29.0">
+                     <graphic>
+                        <Label text="Id" />
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="NamaMatkul" prefWidth="197.0">
+                     <graphic>
+                        <Label text="Nama Mata Kuliah" />
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="SKS" prefWidth="33.0">
+                     <graphic>
+                        <Label text="SKS" />
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="dosenMatkul" prefWidth="191.0">
+                     <graphic>
+                        <Label text="Dosen Pengajar" />
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="deskripsiMatkul" prefWidth="281.0">
+                     <graphic>
+                        <Label text="Deskripsi " />
+                     </graphic>
+                  </TableColumn>
+               </columns>
+            </TableView>
+            <ComboBox fx:id="matKul" layoutX="125.0" layoutY="245.0" onAction="#pilihMatkul" prefHeight="30.0" prefWidth="240.0" promptText="--Pilih Mata Kuliah--" style="-fx-allignment: CENTER;" >
+               <effect>
+                  <Glow />
+               </effect>
+            </ComboBox>
+            <Label layoutX="153.0" layoutY="203.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="157.0" layoutY="252.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSubmit" layoutX="125.0" layoutY="293.0" mnemonicParsing="false" onAction="#submit" prefHeight="30.0" prefWidth="240.0" style="-fx-background-color: #1e90ff;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <Line endX="751.0" layoutX="127.0" layoutY="160.0" startX="-9.0" stroke="DODGERBLUE" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

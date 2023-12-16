@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simakma.controller.HomeAdminController">
+   <left>
+      <AnchorPane prefHeight="720.0" prefWidth="46.0" style="-fx-background-color: #0766AD;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="-1.0" layoutY="114.0" prefHeight="515.0" prefWidth="301.0">
+               <children>
+                  <Button fx:id="btnHome" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#Home" prefHeight="70.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 0px 6px;" text="Home" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="25" text="" wrappingWidth="47.33332824707031" />
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnMhs" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#toMhs" onMouseClicked="#Profil" prefHeight="70.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 0px 6px;" text="Data Mahasiswa" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER" size="25" wrappingWidth="46.571428298950195" />
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnDosen" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#toDosen" onMouseClicked="#MataKuliah" prefHeight="70.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 0px 6px;" text="Data Dosen" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER" size="25" wrappingWidth="47.14285659790039" />
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnFakultas" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#toFaculty" onMouseClicked="#JadwalKuliah" prefHeight="70.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 0px 6px;" text="Data Fakultas" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="BUILDING" size="24" wrappingWidth="50.476192474365234" />
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnProdi" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#toProdi" onMouseClicked="#JadwalKuliah" prefHeight="70.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 0px 6px;" text="Data Program Studi" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="BRIEFCASE" size="24" wrappingWidth="50.476192474365234" />
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnRuangan" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#toRuangan" onMouseClicked="#JadwalKuliah" prefHeight="70.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 0px 6px;" text="Data Ruangan" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="MAP" size="24" wrappingWidth="50.476192474365234" />
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnJadwal" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#toJadwal" onMouseClicked="#JadwalKuliah" prefHeight="70.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 0px 6px;" text="Data Jadwal" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR" size="24" wrappingWidth="50.476192474365234" />
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="btnMatkul" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#toMatkul" onMouseClicked="#JadwalKuliah" prefHeight="70.0" prefWidth="300.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 0px 6px;" text="Data Mata Kuliah" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="BOOK" size="24" wrappingWidth="50.476192474365234" />
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="97.0" layoutX="-3.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="304.0" />
+            <Text fill="WHITE" layoutX="92.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="WHITE" glyphName="UNIVERSITY" layoutX="65.0" layoutY="55.0" size="30" text="" />
+            <Label layoutX="109.0" layoutY="29.0" text="SIMAKMA" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="96.0" prefWidth="980.0">
+               <children>
+                  <Label fx:id="lbNamaPojok" layoutX="823.0" layoutY="35.0" text="Admin" textFill="#0766ad">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="#0766ad" glyphName="USER" layoutX="799.0" layoutY="52.0" />
+                  <Label layoutX="85.0" layoutY="35.0" text="&gt;&gt; Home" textFill="#0766ad">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Text fill="#0766ad" layoutX="83.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selamat Datang,">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Label fx:id="lbMainName" layoutX="84.0" layoutY="155.0" text="Admin!" textFill="#0766ad">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Line endX="699.3333740234375" layoutX="194.0" layoutY="210.0" startX="-111.33334350585938" stroke="#0766ad" />
+            <Button fx:id="mnMhs" alignment="BASELINE_LEFT" layoutX="82.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#keProfil" prefHeight="101.0" prefWidth="181.0" style="-fx-background-color: #0766AD;">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button fx:id="mnMatkul" alignment="BASELINE_LEFT" layoutX="291.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#keMatkul" prefHeight="101.0" prefWidth="181.0" style="-fx-background-color: #1E90FF;">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <Button fx:id="mnJadwal" alignment="BASELINE_LEFT" layoutX="498.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#keJadwal" prefHeight="101.0" prefWidth="181.0" style="-fx-background-color: #29ADB2;">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="197.0" layoutY="303.0" size="50" />
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="392.0" layoutY="303.0" size="50" />
+            <FontAwesomeIconView fill="WHITE" glyphName="BUILDING" layoutX="600.0" layoutY="301.0" size="50" />
+            <Button fx:id="mnSetting" alignment="BASELINE_LEFT" layoutX="709.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#keSetting" prefHeight="101.0" prefWidth="181.0" style="-fx-background-color: #4FBE0C;">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <FontAwesomeIconView fill="WHITE" glyphName="BRIEFCASE" layoutX="812.0" layoutY="302.0" size="50" />
+            <Label layoutX="102.0" layoutY="275.0" text="Mahasiswa" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="735.0" layoutY="264.0" text="Program" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="326.0" layoutY="277.0" text="Dosen" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="527.0" layoutY="276.0" text="Fakultas" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="mnProfil1" alignment="BASELINE_LEFT" layoutX="82.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#keProfil" prefHeight="101.0" prefWidth="181.0" style="-fx-background-color: #5FBDFF;">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <FontAwesomeIconView fill="WHITE" glyphName="MAP" layoutX="193.0" layoutY="439.0" size="50" />
+            <Label layoutX="110.0" layoutY="411.0" text="Ruangan" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="mnMatkul1" alignment="BASELINE_LEFT" layoutX="291.0" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#keMatkul" prefHeight="101.0" prefWidth="181.0" style="-fx-background-color: #363062;">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <FontAwesomeIconView fill="WHITE" glyphName="BOOK" layoutX="392.0" layoutY="439.0" size="50" />
+            <Label layoutX="326.0" layoutY="423.0" text="Kuliah" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="mnJadwal1" alignment="BASELINE_LEFT" layoutX="498.0" layoutY="371.0" mnemonicParsing="false" onMouseClicked="#keJadwal" prefHeight="101.0" prefWidth="181.0" style="-fx-background-color: #1B4242;">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR" layoutX="600.0" layoutY="438.0" size="50" />
+            <Label layoutX="531.0" layoutY="403.0" text="Jadwal" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="531.0" layoutY="424.0" text="Kuliah" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="mnSetting1" alignment="BASELINE_LEFT" layoutX="709.0" layoutY="373.0" mnemonicParsing="false" onMouseClicked="#keSetting" prefHeight="101.0" prefWidth="181.0" style="-fx-background-color: #092635;">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Button>
+            <FontAwesomeIconView fill="WHITE" glyphName="COG" layoutX="812.0" layoutY="441.0" size="50" />
+            <Label layoutX="742.0" layoutY="413.0" text="Setting" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="735.0" layoutY="284.0" text="Studi" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="327.0" layoutY="403.0" text="Mata" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

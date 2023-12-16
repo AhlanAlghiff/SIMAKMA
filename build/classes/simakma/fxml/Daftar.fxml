@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simakma.controller.DaftarController">
+   <left>
+      <AnchorPane prefHeight="720.0" prefWidth="399.0" style="-fx-background-color: #1e90ff;" styleClass="style" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="UNIVERSITY" layoutX="98.0" layoutY="211.0" size="35" text="" wrappingWidth="38.14285659790039" />
+            <Text fill="WHITE" layoutX="76.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistem Manajemen" textAlignment="CENTER" wrappingWidth="257.337890625">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="88.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Akademik Mahasiswa" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="140.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIMAKMA" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="144.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sudah Punya Akun?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnMasuk" layoutX="86.0" layoutY="583.0" mnemonicParsing="false" onAction="#toMasuk" prefHeight="31.0" prefWidth="234.0" text="Masuk" textFill="DODGERBLUE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="720.0" prefWidth="870.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="tfNama" layoutX="166.0" layoutY="201.0" prefHeight="30.0" prefWidth="240.0" promptText="Nama">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tfNpm" layoutX="166.0" layoutY="269.0" prefHeight="30.0" prefWidth="240.0" promptText="NPM">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tfEmail" layoutX="468.0" layoutY="201.0" prefHeight="30.0" prefWidth="240.0" promptText="Email">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <DatePicker fx:id="dpTL" layoutX="308.0" layoutY="341.0" prefHeight="30.0" prefWidth="100.0" promptText="Tanggal Lahir" />
+            <TextField fx:id="tfTelepon" layoutX="469.0" layoutY="268.0" prefHeight="30.0" prefWidth="240.0" promptText="Telepon">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="165.0" layoutY="92.0" text="Selamat Datang!">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rbLaki" layoutX="280.0" layoutY="471.0" mnemonicParsing="false" text="Laki-Laki">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgGender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbPerempuan" layoutX="381.0" layoutY="471.0" mnemonicParsing="false" text="Perempuan" toggleGroup="$tgGender">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </RadioButton>
+            <ComboBox fx:id="cbFakultas" layoutX="170.0" layoutY="511.0" onAction="#onFakultasSelected" prefHeight="25.0" prefWidth="230.0" promptText="-- Pilih Fakultas --" />
+            <ComboBox fx:id="cbProdi" layoutX="473.0" layoutY="511.0" prefHeight="25.0" prefWidth="230.0" promptText="--Pilih Program Studi--" />
+            <Text layoutX="166.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama Lengkap">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="167.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nomor Pokok Mahasiswa (NPM)">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="170.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alamat ">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="168.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tempat  &amp; Tanggal Lahir">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="470.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Telepon">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="172.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenis Kelamin">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="166.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Harap mengisi data diri berikut secara lengkap." wrappingWidth="552.0534057617188">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfTempatLahir" layoutX="167.0" layoutY="341.0" prefHeight="30.0" prefWidth="130.0" promptText="Tempat Lahir">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Text layoutX="469.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="taAlamat" layoutX="167.0" layoutY="401.0" prefHeight="53.0" prefWidth="536.0" promptText=" Alamat Lengkap">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <Button fx:id="btnSubmit" layoutX="172.0" layoutY="579.0" mnemonicParsing="false" onAction="#submit" prefHeight="31.0" prefWidth="535.0" style="-fx-background-color: #1e90ff;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="470.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asal Sekolah">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfAsalSekolah" layoutX="469.0" layoutY="341.0" prefHeight="30.0" prefWidth="240.0" promptText="cth: SMA NEGERI 77 JAKARTA">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
